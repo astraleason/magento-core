@@ -261,6 +261,7 @@ class Mage_Adminhtml_Catalog_Product_AttributeController extends Mage_Adminhtml_
             if(!isset($data['apply_to'])) {
                 $data['apply_to'] = array();
             }
+            $data['entity_type_id'] = $model->getEntityTypeId();
 
             //filter
             $data = $this->_filterPostData($data);
